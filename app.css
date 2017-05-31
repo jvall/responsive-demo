@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.workflow-list {
+    background-color: lightblue;
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+}
+
+.action-bar {
+    background-color: darkslategrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.action-item {
+    color: white;
+}
+
+.action-item:first-child {
+    margin-left: 0;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.workflow-title {
+    background-color: darkblue;
+    font-weight: bold;
+    color: white;
+    font-size: 1.6em;
+}
+
+.add-icon {
+    position: absolute;
+    margin-right: 5px;
+    right: 0;
+}
+
+.workflow-item {
+    background-color: lightskyblue;
+    margin: 1px 0;
+}
+
+.workflow-item p {
+    font-size: 1.6em;
+    margin: 0;
+}
+
+.workflow-item-info {
+    background-color: lightsalmon;
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+}
+
+.slide-open {
+    transform: translate(-100%);
+}
+
+
+/* tablet landscape and up */
+
+@media (min-width: 56.3125em) {
+    .slide-open {
+        transform: none;
+    }
+    .workflow-list {
+        width: 300px;
+    }
+}

@@ -1,0 +1,40 @@
+/* mobile only, width <= 599 px */
+
+@media (max-width: 37.4375em) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+
+/* tablet portrait, width >= 600 && width <= 900 */
+
+@media (min-width: 37.5em) and (max-width: 56.25em) {
+    .hide-tablet-portrait {
+        display: none;
+    }
+    .hide-tablet {
+        display: none;
+    }
+}
+
+
+/* tablet landscape, width >= 901 && width <= 1200 */
+
+@media (min-width: 56.3125em) and (max-width: 75em) {
+    .hide-tablet-landscape {
+        display: none;
+    }
+    .hide-tablet {
+        display: none;
+    }
+}
+
+
+/* desktop, width >= 1201 */
+
+@media (min-width: 75.06255em) {
+    .hide-desktop {
+        display: none;
+    }
+}
